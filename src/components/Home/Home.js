@@ -5,13 +5,15 @@ import { FaPizzaSlice, FaMapMarkedAlt } from "react-icons/fa";
 import { BsTruck, BsPhone, BsBoxSeam } from "react-icons/bs";
 import Banner from '../Banner/Banner';
 import Header from '../Header/Header';
-import './Home.css'
 import PopularItems from '../PopularItems/PopularItems';
 import Restaurants from '../Restaurants/Restaurants';
 import Testimonial from '../Testimonials/Testimonial';
 import AboutAppSec from '../AboutAppSec/AboutAppSec';
 import Blogs from '../Blogs/Blogs';
 import Footer from '../Footer/Footer';
+import featureBanner from '../../image/feature-sec-banner.jpg'
+import pizzaBanner from '../../image/pizza-banner.png'
+import './Home.css'
 
 const Home = () => {
     return (
@@ -64,7 +66,7 @@ const Home = () => {
             <Container fluid className="feature-container">
                 <Row>
                     <Col className="p-0" md={6}>
-                        <img className="img-fluid" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/sit-photo.jpg" />
+                        <img className="img-fluid" src={featureBanner} />
                     </Col>
                     <Col className="p-5" md={6}>
                         <div className="p-5 feature-details">
@@ -118,7 +120,7 @@ const Home = () => {
 
                     </Col>
                     <Col md={7}>
-                        <img className="img-fluid" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/pizza-1024x688.png" />
+                        <img className="img-fluid" src={pizzaBanner} />
                     </Col>
                 </Row>
             </Container>

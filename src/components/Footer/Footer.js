@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaTwitter, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import logo from '../../image/logo.png'
+import footerBanner from '../../image/footer-banner.jpg'
 import './Footer.css'
 
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
                         <div className="footer-top">
                             <Row className="g-0">
                                 <Col className="footer-top-left" md={6}>
-                                    <img className="img-fluid footer-top-left-img" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/footer-banner.jpg" />
+                                    <img className="img-fluid footer-top-left-img" src={footerBanner} />
                                 </Col>
                                 <Col className="footer-top-right text-center pt-4" md={6}>
                                     <p className="m-0 fw-bold pt-2"><small>Call us to make order now.</small></p>

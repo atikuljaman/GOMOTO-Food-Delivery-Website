@@ -2,6 +2,11 @@ import React from 'react';
 import { Card, Col, Row, Container } from 'react-bootstrap';
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
+import res1 from '../../image/restaurant1.jpg'
+import res2 from '../../image/restaurant2.jpg'
+import res3 from '../../image/restaurant3.jpg'
+import res4 from '../../image/restaurant4.jpg'
+import res5 from '../../image/restaurant5.jpg'
 import './Restaurants.css';
 
 const Restaurants = () => {
@@ -16,7 +21,7 @@ const Restaurants = () => {
                 <Row>
                     <Col className="large-restaurant-card" md={6}>
                         <Card className="restaurant-card border-0">
-                            <Card.Img className="restaurant-img img-fluid" variant="top" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/rest_01-1583x2048.jpg" />
+                            <Card.Img className="restaurant-img img-fluid" variant="top" src={res1} />
                             <Card.Body className="p-4">
                                 <Card.Title><h1 className="fw-bold">Burger House</h1></Card.Title>
                                 <Card.Text>
@@ -30,7 +35,7 @@ const Restaurants = () => {
                         <Row>
                             <Col md={6}>
                                 <Card className="restaurant-card border-0">
-                                    <Card.Img className="img-fluid" variant="top" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/rest_03-706x710.jpg" />
+                                    <Card.Img className="img-fluid" variant="top" src={res2} />
                                     <Card.Body className="p-4">
                                         <Card.Title><h4 className="fw-bold">Restaurant Monaco</h4></Card.Title>
                                         <Card.Text>
@@ -42,7 +47,7 @@ const Restaurants = () => {
                             </Col>
                             <Col md={6}>
                                 <Card className="restaurant-card border-0">
-                                    <Card.Img className="img-fluid" variant="top" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/rest_02-706x710.jpg" />
+                                    <Card.Img className="img-fluid" variant="top" src={res3} />
                                     <Card.Body className="p-4">
                                         <Card.Title><h4 className="fw-bold">Ribs and Beer</h4></Card.Title>
                                         <Card.Text>
@@ -56,7 +61,7 @@ const Restaurants = () => {
                         <Row className="pt-4">
                             <Col md={6}>
                                 <Card className="restaurant-card border-0">
-                                    <Card.Img className="img-fluid" variant="top" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/rest_04-706x710.jpg" />
+                                    <Card.Img className="img-fluid" variant="top" src={res4} />
                                     <Card.Body className="p-4">
                                         <Card.Title><h4 className="fw-bold">Sushiteria</h4></Card.Title>
                                         <Card.Text>
@@ -68,7 +73,7 @@ const Restaurants = () => {
                             </Col>
                             <Col md={6}>
                                 <Card className="restaurant-card border-0">
-                                    <Card.Img className="img-fluid" variant="top" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/rest_05-706x710.jpg" />
+                                    <Card.Img className="img-fluid" variant="top" src={res5} />
                                     <Card.Body className="p-4">
                                         <Card.Title><h4 className="fw-bold">Happy Grill Cafe</h4></Card.Title>
                                         <Card.Text>

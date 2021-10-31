@@ -17,6 +17,7 @@ import MyOrder from "./components/MyOrder/MyOrder";
 import ManageAllOrder from "./components/ManageAllOrder/ManageAllOrder";
 import AddNewProduct from "./components/AddNewProduct/AddNewProduct";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import AllBlogs from "./components/AllBlogs/AllBlogs";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route exact path="/contact">
               <Contact />
+            </Route>
+            <Route exact path="/allBlogs">
+              <AllBlogs />
             </Route>
             <PrivateRoute path="/placeOrder/:id">
               <PlaceOrder />

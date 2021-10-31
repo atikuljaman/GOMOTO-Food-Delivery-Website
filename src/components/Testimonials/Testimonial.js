@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaQuoteLeft } from "react-icons/fa";
+import testimonial from '../../image/testimonial.jpg';
 import './Testimonial.css';
 
 const Testimonial = () => {
@@ -24,7 +25,7 @@ const Testimonial = () => {
                             </p>
                             <div>
                                 <div className="">
-                                    <img className="img-fluid testimonial-img rounded-circle mt-4" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/client-16-100x100.jpg" />
+                                    <img className="img-fluid testimonial-img rounded-circle mt-4" src={testimonial} />
                                     <p className="fw-bold m-0 pt-2">Patric Stone</p>
                                     <p className="m-0 fw-bold testimonial-job"><small>Freelancer</small></p>
                                 </div>

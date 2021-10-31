@@ -1,6 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCalendarAlt, FaEye, FaCommentDots } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+import blog1 from '../../image/blog1.jpg';
+import blog2 from '../../image/blog2.jpg';
+import blog3 from '../../image/blog3.jpg';
+import blog4 from '../../image/blog4.jpg';
 import './Blogs.css'
 
 const Blogs = () => {
@@ -15,7 +20,7 @@ const Blogs = () => {
                 <Row>
                     <Col md={6}>
                         <Card className="border-0 blog-card">
-                            <Card.Img variant="top" className="img-fluid blog-img" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/blog_01-1-755x470.jpg" />
+                            <Card.Img variant="top" className="img-fluid blog-img" src={blog1} />
                             <Card.Body className="px-0">
                                 <button className="blog-btn border-0 text-white fw-bold mb-3">Food Delivery</button>
                                 <Card.Title>
@@ -38,7 +43,7 @@ const Blogs = () => {
                     <Col className="px-4" md={6}>
                         <Row className="side-card">
                             <Col className="p-0" md={4}>
-                                <img className="img-fluid h-100 side-blog-img" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/blog_02-2-530x414.jpg" />
+                                <img className="img-fluid h-100 side-blog-img" src={blog2} />
                             </Col>
                             <Col md={8}>
                                 <Card.Body className="px-0">
@@ -58,7 +63,7 @@ const Blogs = () => {
                         </Row>
                         <Row className="side-card mt-4">
                             <Col className="p-0" md={4}>
-                                <img className="img-fluid h-100 side-blog-img" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/blog_03-2-530x414.jpg" />
+                                <img className="img-fluid h-100 side-blog-img" src={blog3} />
                             </Col>
                             <Col md={8}>
                                 <Card.Body className="px-0">
@@ -78,7 +83,7 @@ const Blogs = () => {
                         </Row>
                         <Row className="side-card mt-4">
                             <Col className="p-0" md={4}>
-                                <img className="img-fluid h-100 side-blog-img" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/blog_04-2-530x414.jpg" />
+                                <img className="img-fluid h-100 side-blog-img" src={blog4} />
                             </Col>
                             <Col md={8}>
                                 <Card.Body className="px-0">
@@ -99,8 +104,10 @@ const Blogs = () => {
                     </Col>
                 </Row>
 
-                <div className="text-center mt-3">
-                    <button className="buttons">Read More</button>
+                <div className="text-center mt-3 mb-5 pb-5">
+                    <NavLink className="text-decoration-none" to="/AllBlogs">
+                        <button className="buttons">Read More</button>
+                    </NavLink>
                 </div>
             </Container>
         </div>
