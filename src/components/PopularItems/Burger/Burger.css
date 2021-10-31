@@ -1,0 +1,23 @@
+.card-img{
+    transition: all .2s ease;
+}
+.card-img:hover{
+    transform: scale(1.1);
+}
+.card-desc{
+    font-size: 14.5px;
+    color: gray;
+    font-weight: 600;
+}
+.product-rating{
+    color: #f7b614;
+    font-size: 12px;
+}
+.card-btn{
+    width: 120px;
+    height: 40px;
+    background-color: #f7b614;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+}

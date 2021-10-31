@@ -1,0 +1,34 @@
+.feature-restaurant{
+    margin-top: 100px;
+    line-height: 0;
+}
+.feature-restaurant > p{
+    color: #f7b614;
+}
+.restaurant-card{
+    border-radius: 15px;
+    background-color: #F2EFE6;
+}
+.restaurant-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 760px;
+    /* transition: all .2s ease-in; */
+}
+/* .restaurant-img:hover{
+    transform: scale(1.1);
+} */
+.restaurant-desc{
+    color: rgba(0, 0, 0, 0.829);
+}
+.restaurant-icon{
+    color: #f7b614;
+}
+
+/* Using Media query for responsive */
+@media only screen  and (max-width: 768px) {
+    .restaurant-img{
+        height: 100%;
+    }
+}     

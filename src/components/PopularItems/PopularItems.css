@@ -1,0 +1,27 @@
+.nav-tabs .nav-item > .nav-link  {
+    color: black;
+    font-weight: 600;
+    border-color: none;
+    border: none;
+    text-align: center;
+    margin-right: 30px;
+    border-bottom: 1px dashed black;
+    padding: 5px 2px;
+}
+
+
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link:hover{
+    color: #f7b614;
+}
+.feature-items{
+    line-height: 0px;
+}
+.feature-items > p{
+    color: #f7b614;
+}

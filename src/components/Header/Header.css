@@ -1,0 +1,41 @@
+.header{
+    background-color: #282932;
+}
+.nav-link:hover{
+    color: #f7b614;
+}
+.header-phone-number{
+    color: #f7b614!important;
+}
+.cart-icon, .search-icon{
+    color: white;
+    font-size: 25px;
+}
+.login-button{
+    width: 110px;
+    height: 35px;
+    border-radius: 999px;
+    font-weight:600;
+    border: none;
+    background-color: #f7b614;
+}
+.account-detail{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.account-detail > img{
+    border-radius: 50%;
+}
+.logout-btn{
+    width: 100%;
+    height: 35px;
+    background-color: #f7b614;
+    font-weight: 600;
+}
+/* Using Media query for responsive */
+@media only screen and (max-width: 768px) {
+    .header-phone-number{
+        display: none;
+    }
+}

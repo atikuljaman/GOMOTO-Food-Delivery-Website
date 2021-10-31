@@ -1,0 +1,74 @@
+.about-app-section{
+    background-color: #F2EFE6;
+} 
+.about-app-title > span{
+    color: #F7B614;
+}
+.about-app-feature{
+    width: 50px;
+    height: 50px;
+    background-color: #F7B614;
+    border: 8px solid white;
+}
+
+.about-app-banner{
+    background-image: url('http://gomoto.like-themes.com/wp-content/uploads/2019/06/app-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe-newsletter{
+    background-image: url('http://gomoto.like-themes.com/wp-content/themes/gomoto/assets/images/overlay-waves-white.png');
+    background-color: #F7B614;
+}
+.newsletter-row{
+    padding: 0 50px;
+}
+.newsletter-details{
+    margin-left: 40px;
+}
+.newsletter-desc > h1{
+    font-size: 80px;
+}
+.subscribe-field{
+    position: relative;
+}
+.subscribe-btn{
+    width: 210px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #282932;
+}
+
+/* Using Media query for responsive */
+@media only screen  and (max-width: 768px) {
+    .about-app-section{
+        text-align: center;
+    }
+    .app-features{
+        text-align: left;
+    }
+    .app-store-images{
+        justify-content: center;
+        display: flex;
+    }
+    .app-store-img{
+        width: 120px;
+    }
+    .newsletter-row{
+        padding: 0;
+        text-align: center;
+    }
+    .newsletter-desc {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newsletter-details{
+        margin: 0;
+    }
+    .subscribe-btn{
+        width: 140px;
+    }
+}   

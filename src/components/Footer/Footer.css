@@ -1,0 +1,68 @@
+.footer{
+    background-image: url('http://gomoto.like-themes.com/wp-content/uploads/2019/06/footer-bg.png');
+    background-position: center;
+    background-color: #282932;
+}
+.footer-top{
+    width: 812px;
+    height: 122px;
+    position: relative;
+}
+.footer-top-left-img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.footer-top-right{
+    background-color:#F7B614;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.footer-top-icon{
+    width: 85px;
+    height: 85px;
+    background-color: #F2EFE6;
+    border: 12px solid white;
+    position: absolute;
+    top: 19.5%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.footer-top-call-icon{
+    color: #F7B614;
+}
+
+.footer-center{
+    width: 540px;
+}
+.footer-center > P{
+    color: lightgray;
+    font-weight: 600;
+}
+.footer-social-icons{
+    color: #F7B614;
+}
+.footer-centered{
+    border-bottom: 1px dashed rgb(87, 87, 87);
+}
+.footer-copy-right-text > small > span{
+    color: #F7B614;
+}
+
+
+/* Using Media query for responsive */
+@media only screen  and (max-width: 768px) {
+    .footer-top-left{
+        display: none;
+    }
+    .footer-top-icon{
+        display: none;
+    }
+    .footer-top-right{
+        border-radius: 20px;
+        height: 123px;
+        padding-top: 30px;
+    }
+}     

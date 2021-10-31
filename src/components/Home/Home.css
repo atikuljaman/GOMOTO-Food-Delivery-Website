@@ -1,0 +1,73 @@
+.all-categories{
+    margin-top: -50px;
+}
+.categories{
+    background-color: #F2EFE6;
+    padding: 20px;
+    border-radius: 14px;
+}
+.categories-icon{
+    background-color: #f7b614;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.feature-container{
+    background-color:#282932 ;
+    margin-top: 100px;
+}
+.feature-title > span{
+    color: #f7b614;
+}
+.feature-icon{
+    font-size: 50px;
+    color: #f7b614;
+}
+.feature-detail{
+    font-weight: 600;
+}
+
+.pizza-offer{
+    background-color:#e7e2d5;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.pizza-offer-title{
+    font-size: 80px;
+    line-height: 80px;
+}
+.pizza-offer-title > span{
+    color: #282932;
+}
+
+.pizza-offer-btn{
+    width: 220px;
+    height: 60px;
+    background-color: #282932;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+
+/* Using Media query for responsive */
+@media only screen  and (max-width: 768px) {
+    .all-categories{
+        margin-top: 30px;
+    }
+    .feature-details{
+        text-align: center;
+    }
+    .pizza-offer{
+        text-align: center;
+    }
+    .pizza-offer-title{
+        font-size: 40px;
+        line-height: 42px;
+        font-weight: 900;
+    }
+    .pizza-offer-btn{
+        width: 150px;
+        height: 50px;
+    }
+}     

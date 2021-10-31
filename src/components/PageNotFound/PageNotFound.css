@@ -1,0 +1,15 @@
+.not-found-container{
+    background-image: url('../../image/notfound.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.notfound-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 999px;
+    font-weight: 600;
+    background-color:#f7b614;
+    margin-top: 250px;
+}
