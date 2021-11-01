@@ -25,7 +25,6 @@ const Burger = () => {
         )
     }
 
-    console.log(isLoading);
     return (
         <div>
             <Container>

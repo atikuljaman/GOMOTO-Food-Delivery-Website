@@ -31,6 +31,7 @@ const ManageAllOrder = () => {
 
     const updateApprove = allOrders.find(approve => approve.status = 'Approved');
 
+
     const handleApprove = id => {
 
         fetch(`https://shrieking-witch-03472.herokuapp.com/placedOrder/${id}`, {
