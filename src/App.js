@@ -18,6 +18,11 @@ import ManageAllOrder from "./components/ManageAllOrder/ManageAllOrder";
 import AddNewProduct from "./components/AddNewProduct/AddNewProduct";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import AllBlogs from "./components/AllBlogs/AllBlogs";
+import FoodDelivery from "./components/AllBlogs/FoodDeliveryBlog/FoodDelivery";
+import MedicalBlog from "./components/AllBlogs/MedicalBlog/MedicalBlog";
+import GomotoBlog from "./components/AllBlogs/GomotoBlog/GomotoBlog";
+import CreateBlog from "./components/CreateBlog/CreateBlog";
+import MangeBlogs from "./components/MangeBlogs/MangeBlogs";
 
 function App() {
   return (
@@ -39,6 +44,21 @@ function App() {
             </Route>
             <Route exact path="/allBlogs">
               <AllBlogs />
+            </Route>
+            <Route exact path="/foodDeliveryBlogs">
+              <FoodDelivery />
+            </Route>
+            <Route exact path="/medicalBlogs">
+              <MedicalBlog />
+            </Route>
+            <Route exact path="/gomotoBlogs">
+              <GomotoBlog />
+            </Route>
+            <Route exact path="/createBlog">
+              <CreateBlog />
+            </Route>
+            <Route exact path="/manageBlog">
+              <MangeBlogs />
             </Route>
             <PrivateRoute path="/placeOrder/:id">
               <PlaceOrder />

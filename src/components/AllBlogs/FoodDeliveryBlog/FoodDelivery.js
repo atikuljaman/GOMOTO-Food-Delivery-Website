@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, FormControl, InputGroup, Row, Spinner } from 'react-bootstrap';
-import { FaCalendarAlt, FaCommentDots, FaEye } from 'react-icons/fa';
-import { BsSearch } from 'react-icons/bs';
 import { BiChevronRight } from 'react-icons/bi';
-import useLoading from '../../hooks/useLoading';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import { BsSearch } from 'react-icons/bs';
+import { FaCalendarAlt, FaCommentDots, FaEye } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import smallLogo from '../../image/s-logo.png';
-import blogSideImg from '../../image/blogs/blog-side.jpg';
-import gallery1 from '../../image/blogs/sidebar-gallery1.jpg';
-import gallery2 from '../../image/blogs/sidebar-gallery2.jpg';
-import gallery3 from '../../image/blogs/sidebar-gallery3.jpg';
-import gallery4 from '../../image/blogs/sidebar-gallery4.jpg';
-import gallery5 from '../../image/blogs/sidebar-gallery5.jpg';
-import gallery6 from '../../image/blogs/sidebar-gallery6.jpg';
-import './AllBlogs.css'
+import useLoading from '../../../hooks/useLoading';
+import Footer from '../../Footer/Footer';
+import Header from '../../Header/Header';
+import smallLogo from '../../../image/s-logo.png';
+import blogSideImg from '../../../image/blogs/blog-side.jpg';
+import gallery1 from '../../../image/blogs/sidebar-gallery1.jpg';
+import gallery2 from '../../../image/blogs/sidebar-gallery2.jpg';
+import gallery3 from '../../../image/blogs/sidebar-gallery3.jpg';
+import gallery4 from '../../../image/blogs/sidebar-gallery4.jpg';
+import gallery5 from '../../../image/blogs/sidebar-gallery5.jpg';
+import gallery6 from '../../../image/blogs/sidebar-gallery6.jpg';
 
-const AllBlogs = () => {
+const FoodDelivery = () => {
     const [blogs, setBlogs] = useState([]);
     const { isLoading, setIsLoading } = useLoading();
 
@@ -33,8 +32,6 @@ const AllBlogs = () => {
     const Medicals = blogs.filter(Medical => Medical.ctg === 'Medical');
     const GOMOTOS = blogs.filter(gomoto => gomoto.ctg === 'GOMOTO');
 
-
-
     if (isLoading) {
         return (
             <div className="d-flex spinner-container justify-content-center align-items-center">
@@ -43,17 +40,17 @@ const AllBlogs = () => {
         )
     }
 
-    const allApprovedBlogs = blogs.filter(allAPprovedBlog => allAPprovedBlog.status === 'Approved')
-    const medicalApprovedBlogs = Medicals.filter(medicalAPprovedBlog => medicalAPprovedBlog.status === 'Approved');
+
     const foodDeliveryApprovedBlogs = foodDeliveries.filter(foodDeliveryBlog => foodDeliveryBlog.status === 'Approved');
-    const gomotoApprovedBlogs = blogs.filter(gomotoApprovedBlog => gomotoApprovedBlog.status === 'Approved');
+    const medicalApprovedBlogs = Medicals.filter(medicalAPprovedBlog => medicalAPprovedBlog.status === 'Approved');
+    const gomotoApprovedBlogs = GOMOTOS.filter(gomotoApprovedBlog => gomotoApprovedBlog.status === 'Approved');
 
     return (
         <div>
             <Header />
 
             <div className="allblog-heading d-flex flex-column justify-content-center align-items-center">
-                <h1 className="text-white">All Blogs</h1>
+                <h1 className="text-white">Food Delivery Blogs</h1>
                 <p>Eat Food <span>|</span> Read Blogs <span>|</span> Enjoy Life.</p>
             </div>
 
@@ -62,19 +59,19 @@ const AllBlogs = () => {
                 <Row className="gy-5 pt-5">
                     <Col className="px-5" md={9}>
                         {
-                            allApprovedBlogs.map(allApprovedBlog => (
+                            foodDeliveryApprovedBlogs.map(foodDelivery => (
                                 <Col className="mb-5">
                                     <Card className="border-0 blog-card">
-                                        <Card.Img variant="top" className="img-fluid blog-img" src={allApprovedBlog?.img} />
+                                        <Card.Img variant="top" className="img-fluid blog-img" src={foodDelivery?.img} />
                                         <Card.Body className="px-0">
-                                            <button className="blog-btn border-0 text-white fw-bold mb-3">{allApprovedBlog?.ctg}</button>
+                                            <button className="blog-btn border-0 text-white fw-bold mb-3">{foodDelivery?.ctg}</button>
                                             <Card.Title>
-                                                <h3 className="fw-bold">{allApprovedBlog?.name}</h3>
+                                                <h3 className="fw-bold">{foodDelivery?.name}</h3>
                                             </Card.Title>
                                             <Card.Text>
-                                                <p className="pt-2 pb-3 blog-desc"><small>{allApprovedBlog?.desc}</small></p>
+                                                <p className="pt-2 pb-3 blog-desc"><small>{foodDelivery?.desc}</small></p>
                                                 <div className="d-flex blog-publish">
-                                                    <p className=""><FaCalendarAlt className="blog-icon" /> <small>{allApprovedBlog?.date}</small></p>
+                                                    <p className=""><FaCalendarAlt className="blog-icon" /> <small>{foodDelivery?.date}</small></p>
                                                     <p className="ms-5"><FaCommentDots className="blog-icon" /> <small>11</small></p>
                                                     <p className="ms-5"><FaEye className="blog-icon" /> <small>1340</small></p>
                                                 </div>
@@ -112,10 +109,8 @@ const AllBlogs = () => {
                                         Categories
                                     </h6>
                                     <div>
-                                        <NavLink activeClassName="selected" className="d-block"
-                                            to="/foodDeliveryBlogs">
-                                            <button
-                                                className="border-0 bg-transparent category-btn"><BiChevronRight className="category-icon" />
+                                        <NavLink className="d-block" to="/foodDeliveryBlogs">
+                                            <button className="border-0 bg-transparent category-btn"><BiChevronRight className="category-icon" />
                                                 <small>Food Delivery (<small>{foodDeliveryApprovedBlogs.length})</small></small>
                                             </button>
                                         </NavLink>
@@ -124,7 +119,7 @@ const AllBlogs = () => {
                                                 <small>Medical (<small>{medicalApprovedBlogs.length})</small></small>
                                             </button>
                                         </NavLink>
-                                        <NavLink className="d-block" to="/gomotoBlogs">
+                                        <NavLink className="d-block" to="">
                                             <button className="border-0 bg-transparent category-btn"><BiChevronRight className="category-icon" />
                                                 <small>GOMOTO (<small>{gomotoApprovedBlogs.length})</small></small>
                                             </button>
@@ -191,10 +186,9 @@ const AllBlogs = () => {
                     </Col>
                 </Row>
             </Container>
-
             <Footer />
-        </div >
+        </div>
     );
 };
 
-export default AllBlogs;
+export default FoodDelivery;

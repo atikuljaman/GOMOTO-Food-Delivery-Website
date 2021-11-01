@@ -1,8 +1,12 @@
+.spinner-container{
+    height: 100vh;
+}
 .allblog-heading{
     background-image: linear-gradient(rgba(65, 64, 64, 0.24), rgba(65, 64, 64, 0.24)), url('../../image/blogs/allblog-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 310px;
+    background-attachment: fixed;
 }
 .allblog-heading > h1{
     font-size: 60px;

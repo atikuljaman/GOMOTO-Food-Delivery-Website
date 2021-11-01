@@ -19,7 +19,8 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto d-flex align-items-center">
-                            <NavLink className="nav-link text-white fw-bold me-4" to="/home">Home</NavLink>
+                            <NavLink className="nav-link text-white fw-bold me-4" to="/home">
+                                Home</NavLink>
                             <NavLink className="nav-link text-white fw-bold me-4" to="/about">About</NavLink>
                             <NavLink className="nav-link text-white fw-bold me-4" to="/contact">Contact</NavLink>
                             <NavLink className="nav-link text-white fw-bold me-4" to="/allBlogs">Blog</NavLink>
@@ -48,6 +49,12 @@ const Header = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <NavLink className="text-decoration-none text-dark" to="/addNewProduct"><h6>Add New Product</h6></NavLink>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item>
+                                            <NavLink className="text-decoration-none text-dark" to="/createBlog"><h6>Create a Blog</h6></NavLink>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item>
+                                            <NavLink className="text-decoration-none text-dark" to="/manageBlog"><h6>Manage Blogs</h6></NavLink>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <button onClick={logOut} className="logout-btn border-0 rounded-pill">Log out</button>
